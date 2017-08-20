@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Dining Brief</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+    <style>
+        *body{font: 400 15px Lato, sans-serif;line-height: 1.8;}
+
+        /*導覽列改樣式*/
+        .navbar {margin-bottom: 0;background-color:black;color:whitesmoke!important;z-index: 9999;border:0;font-size:20px !important;line-height: 1.42857143 !important;letter-spacing: 4px;border-radius: 0;font-family: Montserrat, sans-serif;}
+        .navbar li a, .navbar .navbar-brand {color:white;}
+        .navbar-nav li a:hover, .navbar-nav li.active a {color:deepskyblue!important;background-color:white !important;}
+        .navbar-default .navbar-toggle {border-color: transparent;color: white !important;}
+        /*大型看板*/
+        .jumbotron {background-color:darkseagreen;color:white;padding:100px 25px;}
+        /*排版*/
+        @media screen and (max-width: 768px) {.col-sm-4 {width: calc(100% * 5/ 12);text-align: center;margin: 25px 0;}}
+        #place{background-color:gainsboro;padding-top:20px;padding-bottom: 20px}
+        #container{height:250px;padding-top: 50px;padding-bottom:250px}
+        #word{padding:20px 20px 0 20px;text-align:left}
+        #content{font-size:18px}
+
+        /*台北*/
+        .taipeipic{background-image:url(101%E5%A4%A7%E6%A8%93%20%E6%8B%B7%E8%B2%9D.jpg);background-size:;height:500px;text-align: center}
+        #title{color:white;font-size:50px;top:250px}
+        
+        /*宜蘭*/
+        .ilanpic{background-image:url(宜蘭.jpg);height:500px;text-align: center}
+    </style>
+</head>
+<body>
+    <!--導覽列-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+                </button>
+            <a class="navbar-brand" href="#home">Dinning Brief</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#taipei">台北</a></li>
+                    <li><a href="#ilan">宜蘭</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--大型看板-->
+    <div id="home" class="jumbotron text-center">
+        <br>
+        <h2>美食X餐廳</h2>
+        <p>"甲好好，甲飽飽"</p>
+    </div>
+    <!--食計台北-->
+    <div id="taipei" class="container-fluid taipeipic">
+        <br><br><br><br><br><br><br>
+        <h2 id="title">台北</h2>
+    </div>
+    <!--Ville Cafe-->
+    <div class="container-fluid text-center">
+    <h2>Ville Cafe</h2>
+        <p><strong>座落於台大校園附近</strong></p>
+        <div id="place" class="row">
+            <div class="col-sm-6">
+                <img src="漢堡.JPG" alt="FOOD" width="400" height="300" class="img-rounded">
+                <p id="content"><strong>日式照燒雞日式照燒雞肉堡</strong></p>
+            </div>
+            <div class="col-sm-6">
+                <img src="%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%BA%B5.jpg" alt="FOOD" width="400" height="300" class="img-rounded">
+                <p id="content"><strong>茄汁辣味雞肉義大利麵</strong></p>
+            </div>
+        </div>
+        <div class="row container" id="container">
+            <div class="col-sm-6">
+                <img src="comment.png" alt="comment" width="128" height="128" class="img-rounded">
+            </div>
+            <div id="word" class="col-sm-6">
+                <p id="content">Ville Cafe位在於公館夜市，台灣大學校園附近，相對於其他家咖啡廳，並提供學生，其他想久坐的客人或是想要與朋友聚餐一個好去處，而餐點的部份也提供不少選擇，如義大利麵，漢堡等等。</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--食計宜蘭-->
+    <div id="ilan" class="container-fluid ilanpic">
+        <br><br><br><br><br><br><br>
+        <h2 id="title">宜蘭</h2>
+    </div>
+    <!--光武-->
+    <div class="container-fluid text-center">
+    <h2>光武生活館</h2>
+        <p><strong></strong></p>
+        <div id="place" class="row">
+            <div class="col-sm-6">
+                <img src="光武.JPG" alt="FOOD" width="400" height="300" class="img-rounded">
+            </div>
+            <div class="col-sm-6">
+                <img src="創意料理.jpg" alt="FOOD" width="400" height="300" class="img-rounded">
+            </div>
+        </div>
+        <div class="row" id="container">
+            <div class="col-sm-6">
+                <img src="comment.png" alt="comment" width="128" height="128" class="img-rounded">
+            </div>
+            <div id="word" class="col-sm-6">
+                <p id="content">#創意料理 ＃超大份分享餐</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
