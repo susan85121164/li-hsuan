@@ -31,6 +31,8 @@
         
         /*宜蘭*/
         .ilanpic{background-image:url(li-hsuan/宜蘭.jpg);height:500px;text-align: center}
+        .container-1{background-image: url(li-hsuan/光武.JPG);min-width:95%;height:500px;}
+        .container-2{background-image: url(li-hsuan/創意料理.JPG);min-width:95%; height:500px}
     </style>
 </head>
 <body>
@@ -97,15 +99,29 @@
     <!--光武-->
     <div class="container-fluid text-center">
     <h2>光武生活館</h2>
-        <p><strong></strong></p>
-        <div id="place" class="row">
-            <div class="col-sm-6">
-                <img src="li-hsuan/光武.JPG" alt="FOOD" width="400" height="300" class="img-rounded">
-            </div>
-            <div class="col-sm-6">
-                <img src="li-hsuan/創意料理.jpg" alt="FOOD" width="400" height="300" class="img-rounded">
-            </div>
+    <!--carousel圖片輪播-->
+    <!--輪播圖片-->  
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active container-1"></div>
+            <div class="item container-2"></div>
+        </div>                
+    <!--上下頁按鈕-->
+        <div class="control-btn">
+            <a href="#slideshow" class="left carousel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hiddden="true"></span>
+            </a>
+            <a href="#slideshow" class="right carousel-control" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hiddden="true"></span>
+            </a>
         </div>
+    <!--小圓點按鈕-->
+        <ol class="carousel-indicators">
+             <li data-target="#slideshow" data-slide-to="0"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+        </ol>
+    </div>
+        
         <div class="row" id="container">
             <div class="col-sm-6">
                 <img src="comment.png" alt="comment" width="128" height="128" class="img-rounded">
