@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Curriculum Vitae</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style>
+        /*整體設定*/
+        body{padding-top:50px;padding-left:0px;padding-right:0px;line-height: 1.8;}
+        *{box-sizing:border-box;}
+        
+        /*排版*/
+        [class*="col-"] {float:left;padding:20px;}
+        @media screen and ( min-width:768 px )and(max-width:991px){.col-sm-5{width: calc(100% * 5/ 12)}.col-sm-6{width: calc(100% * 6/ 12)} .col-sm-12{width: calc(100% * 12/ 12)}}
+        .box1{background-color:lightpink;margin-top:0px;padding-top:20px;padding:10px}
+        .box2, .box4{background-color:lightblue;margin-top:10px;margin-top:10px;padding-top:20px;padding:10px}
+        .box3, .box5{background-color:lightgrey;margin-top:10px;margin-top:10px;padding-top:20px;padding:10px}
+        .box6{background-color:black;margin:0 0 0 0 px;padding:0 0 0 0px;height:50px}
+        
+        /*導覽列改樣式*/
+        .navbar {margin-bottom: 0;color:white!important;z-index: 9999;border:0;font-size:15px !important;line-height: 1.42857143 !important;letter-spacing: 4px;border-radius: 0;font-family: Montserrat, sans-serif;}
+        .navbar li a, .navbar .navbar-brand {color:white!important;}
+        .navbar-nav li a:hover, .navbar-nav li.active a {color:lightpink!important;}
+        .navbar-default .navbar-toggle {border-color: transparent;color: white !important;}
+            
+        .jumbotron{background-color:dimgray;color:white!important;padding-left:20px;padding-right:20px;margin-bottom:0px}
+        #pic{border-radius:10px}
+        .food{background-image: url(food.jpg);height:600px;background-size:cover;}
+        .foodc{height: 500px;color:white;}
+
+    </style>
+</head>
+
+<body>   
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-id" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand" href="#home">About Me</a>
+            </div>
+            <div class="collapse navbar-collapse" id="menu-id">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#education">學歷背景</a></li>
+                    <li><a href="#experience">個人經歷</a></li>
+                    <li><a href="#tech">技術與專業能力</a></li>
+                    <li><a href="#interest">興趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--設為主版--> 
+    <div class="jumbotron">
+        <div id="home" class="text-center">
+        <br><br>
+        <h3><img src="leftquote.png" alt="quote">成功不是達到每個特定的目標，而是有勇氣去嘗試<img src="rightquote.png" alt="quote"></h3>
+        <br><br><br>
+        </div>
+    </div>
+    <div id="aboutme" class="contain box1">
+        <div class="row">
+            <div class="col-sm-6">
+                <br><br><br><br><h3 class="text-right">I AM</h3><h2 class="text-right">朱怡軒</h2>
+            </div>
+            <div class="col-sm-6">
+                <img src="me.JPG" class="img-circle" alt="me" style="border:5px white solid"weight=250px width=250px><br><br>
+            </div>
+        </div>
+    </div>
+    
+    <!--內容部分-->
+    <!--學歷背景-->
+    <div id="education" class="contianer-fluid box2">
+        <h2 class="text-center"><br>EDUCATION</h2><br>
+        <div class="row">
+            <div id="boxright" class="col-sm-6 text-right"><img src="jmg.png" alt="sch" height="150px" id="pic"></div>
+            <div class="col-sm-6">
+                <br><h4>景美女中</h4>
+                <p>2013.09~2015.06</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="boxright" class="col-sm-6 text-right"><img src="scu.png" alt="sch" height="150px" id="pic"></div>
+            <div class="col-sm-6">
+                <br><h4>東吳大學企業管理學系</h4>
+                <p>2015.09~至今</p>
+            </div>
+        </div>
+    </div>
+  
+    <!--個人經歷--> 
+    <div id="experience" class="contianer-fluid box3">
+        <br><h2 class="text-center">EXPERIENCE</h2>
+        <br><h3 class="text-center">曾參加過的活動</h3>
+        <div class="row">
+            <div id="boxright" class="col-sm-6 text-right">
+                <img src="CTY.JPG" alt="sch" height="300px" id="pic">
+            </div>
+            <div class="col-sm-6">
+                <h2>CTY12</h2>
+                <p>2017.06.26~2017.06.30</p>
+                <p>CTY由玉山科技協會玉山科技協會所舉辦的營隊，
+                <br>在活動之中，不只在短短五天之中瞭解商業模式與創業，
+                <br>更在正在創業競賽中，學到了不少經驗。</p>
+            </div>
+        </div>
+    </div>
+
+    <!--技術與專業能力--> 
+    <div id="tech" class="contianer-fluid box4">
+        <br><h2 class="text-center">SKILL</h2><br><h3 class="text-center">專業能力</h3>
+        <div class="row">
+            <div class="col-sm-3">
+                <P class="text-center"><img src="accountant.png" alt="account"></P>                                       
+                <h4 class="text-center">會計</h4>
+            </div>
+            <div class="col-sm-3">
+                <P class="text-center"><img src="word.png" alt="account"></P>                                      
+                <h4 class="text-center">Word</h4>
+            </div>
+            <div class="col-sm-3">
+                <P class="text-center"><img src="ppt.png" alt="account"></P>
+                <h4 class="text-center">PowerPoint</h4>
+            </div>
+            <div class="col-sm-3">
+                <P class="text-center"><img src="excel.png" alt="account"></P>                    
+                <h4 class="text-center">Excel</h4>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--興趣--> 
+    <div id="interest" class="contianer-fluid box5">
+        <br><h2 class="text-center">And I'm Interested in...</h2><br>
+        <div class="jumbotron food">
+            <div class="container foodc">
+                <h2>美食X餐廳</h2>
+                <p>spot more delicious</p>
+                <p><a class="btn btn-info btn-lg" role="button" href="https://susan85121164.github.io/li-hsuan/#home">See More</a></p>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid box6"></footer>
+</body>
+</html>
